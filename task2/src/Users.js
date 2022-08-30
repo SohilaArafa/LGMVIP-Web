@@ -1,7 +1,8 @@
 import React , {useState} from 'react'
 const Users = () => {
-  const [users, setUsers] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(false);
+    
   const load = async() => {
     setLoading(true);
     let response = await fetch('https://reqres.in/api/users');
@@ -12,12 +13,21 @@ const Users = () => {
       setLoading(false);
     console.log(users)
   }
+
+  const LoadingSpinner = () => {
+    <div className="spinner-container">
+      <div className="loading-spinner">
+      </div>
+    </div>
+  }
+
   return (
     <>
     <button className='getData' onClick={load}>
       Get Users
     </button>
     <div className='big'>
+      {loading? <LoadingSpinner/> : ""}
       {
         users?.map(  ({id , first_name, last_name ,email , avatar}) => {
           return(
