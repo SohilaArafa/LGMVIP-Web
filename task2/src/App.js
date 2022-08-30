@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          LGMVIP-Web
+         <h1> LGMVIP-Web </h1>
       </header>
       <Users/>
     </div>
