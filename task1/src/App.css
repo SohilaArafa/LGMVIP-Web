@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  margin: 40px auto;
+  width: 40%;
+  min-height: 500px;
+  background-image: url("https://i.pinimg.com/564x/f7/c6/43/f7c643a64f3ac19f3165344017bd4ebe.jpg");
 }
 
 .App-logo {

@@ -1,13 +1,109 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e9d2d2;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.form {
+  background-color: #8b6969;
+}
+
+.addButton {
+  background-color: #e7a1a1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  size: 10px;
+  width: 15%;
+  height: 50px;
+  border-radius: 10px;
+}
+.input {
+  width: 70%;
+  padding: 0 20px;
+  margin: 20px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #e6e4e4;
+  border: 0;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+}
+.task {
+  background-color: white;
+  width: 90%;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  margin: 20px 20px;
+  padding: 5px 0px;
+  align-items: initial;
+  text-align: left;
+  margin-top: 15px;
+}
+.container {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  size: 10px;
+  padding: 5px 450px;
+  text-decoration: none;
+  font-size: 16px;
+  size: 10px;
+  width: 15%;
+  height: 50px;
+  border-radius: 50%;
+  text-align: end;
+  float: left;
+  margin-top: -65px;
+  margin-left: -20px;
+}
+.removeButton {
+  border: none;
+  background-color: transparent;
+  height: 100px;
+  font-size: 20pt;
+}
+.doneButton {
+  border: none;
+  background-color: transparent;
+  height: 100px;
+  font-size: 20pt;
+}
+.text {
+  margin-left: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.clearAll {
+  background-color: #e7a1a1;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  size: 10px;
+  width: 95%;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.text2 {
+  margin-left: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: line-through;
 }
