@@ -8,20 +8,22 @@ import * as math from "mathjs";
 function App() {
   const [input, setInput] = useState('')
   const [result,setResult] = useState('');
+
   const addToText = (val) => {
-    setInput((input) => [...input, val + " "]);
+    setInput((input) => [...input, val + ""]);
+    console.log(input)
   };
 
   const calculateResult = () => {
     const inputs = input.join(""); 
-
+    console.log(inputs)
     setResult(math.evaluate(inputs));
   };
-
   const resetInput = () => {
     setInput("");
     setResult("");
   }; 
+
   const buttonColor = '#797979';
   return (
     <div className="App">
