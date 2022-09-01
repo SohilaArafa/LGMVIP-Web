@@ -9,7 +9,7 @@ function App() {
   const [input, setInput] = useState('')
   const [result,setResult] = useState('');
 
-  const addToText = (val) => {
+  const add = (val) => {
     setInput((input) => [...input, val + ""]);
     console.log(input)
   };
@@ -30,27 +30,27 @@ function App() {
       <Input input={input} result={result} />
       </div>
       <div className="row">
-        <Digits sign="1" handleClick={addToText} />
-        <Digits sign="2" handleClick={addToText} />
-        <Digits sign="3" handleClick={addToText} />
-        <Digits sign="/" handleClick={addToText} />
+        <Digits sign="1" handleClick={add} />
+        <Digits sign="2" handleClick={add} />
+        <Digits sign="3" handleClick={add} />
+        <Digits sign="/" handleClick={add} />
       </div>
        <div className="row">
-          <Digits sign="4" handleClick={addToText} />
-          <Digits sign="5" handleClick={addToText} />
-          <Digits sign="6" handleClick={addToText} />
-          <Digits sign="*" handleClick={addToText} />
+          <Digits sign="4" handleClick={add} />
+          <Digits sign="5" handleClick={add} />
+          <Digits sign="6" handleClick={add} />
+          <Digits sign="*" handleClick={add} />
         </div>
         <div className="row">
-          <Digits sign="7" handleClick={addToText} />
-          <Digits sign="8" handleClick={addToText} />
-          <Digits sign="9" handleClick={addToText} />
-          <Digits sign="+" handleClick={addToText} />
+          <Digits sign="7" handleClick={add} />
+          <Digits sign="8" handleClick={add} />
+          <Digits sign="9" handleClick={add} />
+          <Digits sign="+" handleClick={add} />
         </div>
         <div className="row">
-          <Digits sign="0" handleClick={addToText} />
-          <Digits sign="." handleClick={addToText} />
-          <Digits sign="-" handleClick={addToText} />
+          <Digits sign="0" handleClick={add} />
+          <Digits sign="." handleClick={add} />
+          <Digits sign="-" handleClick={add} />
           <Digits sign="=" handleClick={calculateResult} color='white' />
         </div>
         <button className='clear' onClick={() => resetInput()}>CLEAR</button>
