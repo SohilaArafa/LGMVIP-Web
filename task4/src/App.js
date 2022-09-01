@@ -24,35 +24,34 @@ function App() {
     setResult("");
   }; 
 
-  const buttonColor = '#797979';
   return (
     <div className="App">
       <div className='container'>
       <Input input={input} result={result} />
       </div>
       <div className="row">
-        <Digits symbol="1" handleClick={addToText} />
-        <Digits symbol="2" handleClick={addToText} />
-        <Digits symbol="3" handleClick={addToText} />
-        <Digits symbol="/" color={buttonColor} handleClick={addToText} />
+        <Digits sign="1" handleClick={addToText} />
+        <Digits sign="2" handleClick={addToText} />
+        <Digits sign="3" handleClick={addToText} />
+        <Digits sign="/" handleClick={addToText} />
       </div>
        <div className="row">
-          <Digits symbol="4" handleClick={addToText} />
-          <Digits symbol="5" handleClick={addToText} />
-          <Digits symbol="6" handleClick={addToText} />
-          <Digits symbol="*" color={buttonColor} handleClick={addToText} />
+          <Digits sign="4" handleClick={addToText} />
+          <Digits sign="5" handleClick={addToText} />
+          <Digits sign="6" handleClick={addToText} />
+          <Digits sign="*" handleClick={addToText} />
         </div>
         <div className="row">
-          <Digits symbol="7" handleClick={addToText} />
-          <Digits symbol="8" handleClick={addToText} />
-          <Digits symbol="9" handleClick={addToText} />
-          <Digits symbol="+" color={buttonColor} handleClick={addToText} />
+          <Digits sign="7" handleClick={addToText} />
+          <Digits sign="8" handleClick={addToText} />
+          <Digits sign="9" handleClick={addToText} />
+          <Digits sign="+" handleClick={addToText} />
         </div>
         <div className="row">
-          <Digits symbol="0" handleClick={addToText} />
-          <Digits symbol="." handleClick={addToText} />
-          <Digits symbol="-" color={buttonColor} handleClick={addToText} />
-          <Digits symbol="=" handleClick={calculateResult} color='white' />
+          <Digits sign="0" handleClick={addToText} />
+          <Digits sign="." handleClick={addToText} />
+          <Digits sign="-" handleClick={addToText} />
+          <Digits sign="=" handleClick={calculateResult} color='white' />
         </div>
         <button className='clear' onClick={() => resetInput()}>CLEAR</button>
     </div>
