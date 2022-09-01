@@ -6,8 +6,7 @@ const Input = ({input, result}) => {
       <div className="result">
         <h1>{result}</h1>
       </div>
-
-      <div className="text">
+      <div className="input">
         <h3>{input}</h3>
       </div>
     </div>

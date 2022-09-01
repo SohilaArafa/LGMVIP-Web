@@ -1,13 +1,12 @@
 import React from 'react'
 
-const Digits = ({ symbol, color, handleClick }) => {
+const Digits = ({ sign, color, handleClick }) => {
   return (
-    <div
-      onClick={() => handleClick(symbol)}
-      className="btns"
+    <div className="btns"
+      onClick={() => handleClick(sign)}
       style={{ backgroundColor: color }}
     >
-      {symbol}
+      {sign}
     </div>
   );
 }
