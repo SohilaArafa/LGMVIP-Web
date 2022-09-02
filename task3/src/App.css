@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  min-height: 10%;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: -15px;
 }
 
 .App-link {
@@ -35,4 +36,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+h2 {
+  text-align: left;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+label {
+  clear: both;
 }
