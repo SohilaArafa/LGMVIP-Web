@@ -10,7 +10,9 @@ function App() {
         <hr />
         <h4>Personal Information</h4>
         <Input />
-        <hr style={{marginTop : 20}}/>
+        <div className='right'>
+          test
+        </div>
       </header>
     </div>
   );

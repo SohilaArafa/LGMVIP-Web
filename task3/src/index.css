@@ -13,7 +13,7 @@ code {
 }
 
 .input {
-  width: 40%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -26,9 +26,17 @@ code {
   border-radius: 10px;
   background-color: #4caf50;
   color: white;
-  width: 10%;
+  width: 30%;
   height: 50px;
   display: inline;
   border: none;
   margin-left: 40px;
+}
+.left {
+  float: left;
+  width: 35%;
+}
+.right {
+  width: 35%;
+  float: right;
 }

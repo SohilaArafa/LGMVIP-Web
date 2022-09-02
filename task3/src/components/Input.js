@@ -29,7 +29,7 @@ const handleSubmit = () => {
 }
 
   return (
-    <div>
+    <div className='left'>
       <ul >
           <label className='label'> 
             First Name :
