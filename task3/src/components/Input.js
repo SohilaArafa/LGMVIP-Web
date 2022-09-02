@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import Enrolled from './Enrolled';
 
 const Input = ( ) => {
     const [first, setfirst] = useState('');
@@ -29,6 +30,7 @@ const handleSubmit = () => {
 }
 
   return (
+      <>
     <div className='left'>
       <ul >
           <label className='label'> 
@@ -72,6 +74,13 @@ const handleSubmit = () => {
       </ul>
       <button className='submit' onClick={handleSubmit}  >Submit</button>
     </div>
+    <div className='right'>
+       <h2 style={{marginTop : -57 , marginLeft : 150 } }>
+        Enrolled Students
+        </h2>
+        <Enrolled enrolled={enrolled}  />
+    </div>
+    </>
   )
 }
 

@@ -31,12 +31,13 @@ code {
   display: inline;
   border: none;
   margin-left: 40px;
+  float: left;
 }
 .left {
   float: left;
   width: 35%;
 }
 .right {
-  width: 35%;
+  width: 60%;
   float: right;
 }

@@ -8,12 +8,10 @@ function App() {
           Student Registeration
         </h2>
         <hr />
-        <h4>Personal Information</h4>
-        <Input />
-        <div className='right'>
-          test
-        </div>
+      <h4>Personal Information</h4>
       </header>
+      <Input />
+
     </div>
   );
 }
