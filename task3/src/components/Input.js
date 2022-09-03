@@ -33,7 +33,7 @@ const handleSubmit = () => {
       <>
     <div className='left'>
       <ul >
-          <label className='label'> 
+          <label> 
             First Name :
             <input className='input'
             value={first}
