@@ -5,11 +5,13 @@ const Input = ( ) => {
     const [first, setfirst] = useState('');
     const [last, setlast] = useState('');
     const [email, setemail] = useState('');
-    const [address, setaddress] = useState('');
     const [website, setwebsite] = useState('');
     const [image, setimage] = useState('');
+    const [gender, setgender] = useState('');
+    const [skills, setskills] = useState([]);
+    const [checked, setchecked] = useState('');
 
-    const [enrolled, setenrolled] = useState([])
+    const [enrolled, setenrolled] = useState([]);
 
 const handleSubmit = () => {
 
@@ -17,14 +19,16 @@ const handleSubmit = () => {
         fn : first ,
         ln : last ,
         e : email ,
-        a : address,
         w : website,
-        i : image 
+        i : image ,
+        g : gender ,
+        s : skills
     }
 
     setenrolled([...enrolled,current]);
     setfirst('');setlast('');setemail('');
-    setwebsite('');setimage('');setaddress('');
+    setwebsite('');setimage('');
+    setskills([]); setgender(''); 
 
     console.log(enrolled);
 }
@@ -53,13 +57,7 @@ const handleSubmit = () => {
              value={email}
              onChange={(e) => setemail(e.target.value)}/>
          </label>
-         <label>
-             Address :
-             <input className='input'
-             value={address} 
-             onChange={(e) => setaddress(e.target.value)}/>
-         </label>
-         <label>
+          <label>
              Website :
              <input className='input' 
              value={website}  
@@ -71,6 +69,44 @@ const handleSubmit = () => {
              value={image} 
              onChange={(e) => setimage(e.target.value)} />
          </label>
+         <label>
+             Gender :
+             <div>
+             <input 
+             type="radio"
+             value="male" 
+             id="male"
+             checked={gender === 'male'}
+             onChange={(e) =>setgender(e.target.value)} />
+             <label> Male </label>
+            <input 
+             type="radio"
+             value="female" id="female"
+            checked={gender === 'female'}
+             onChange={(e) => setgender(e.target.value)} />
+             <label> Female </label>
+             </div>
+         </label>
+         <label>
+             Skills :
+            <div>
+             <input type='checkbox'
+             value='JavaScript' 
+             onChange={(e) => setskills([...skills,e.target.value]) } />
+             <label>JavaScript</label>
+
+            <input type='checkbox'
+             value='HTML'
+             onChange={(e) => setskills([...skills,e.target.value])} />
+             <label> HTML </label>
+
+            <input type='checkbox'
+             value='CSS'
+             onChange={(e) => setskills([...skills,e.target.value])} />
+             <label> CSS </label>
+             </div>
+         </label>
+
       </ul>
       <button className='submit' onClick={handleSubmit}  >Submit</button>
     </div>
@@ -78,7 +114,7 @@ const handleSubmit = () => {
        <h2 style={{marginTop : -57 , marginLeft : 150 } }>
         Enrolled Students
         </h2>
-        <Enrolled enrolled={enrolled}  />
+
     </div>
     </>
   )

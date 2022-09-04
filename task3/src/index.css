@@ -41,3 +41,6 @@ code {
   width: 60%;
   float: right;
 }
+.box {
+  float: left;
+}
