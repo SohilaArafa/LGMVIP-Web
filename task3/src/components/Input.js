@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import Enrolled from './Enrolled';
+import {v4 as uuidv4} from "uuid"
 
 const Input = ( ) => {
     const [first, setfirst] = useState('');
@@ -15,8 +15,8 @@ const Input = ( ) => {
 
     const [enrolled, setenrolled] = useState([]);
 
-const handleSubmit = () => {
 
+const handleSubmit = () => {
     let current = {
         fn : first ,
         ln : last ,
@@ -24,7 +24,8 @@ const handleSubmit = () => {
         w : website,
         i : image ,
         g : gender ,
-        s : skills
+        s : skills ,
+        id : uuidv4() 
     }
 
     setenrolled([...enrolled,current]);
@@ -124,6 +125,7 @@ const handleSubmit = () => {
        <h2 style={{marginTop : -57 , marginLeft : 150 } }>
         Enrolled Students
         </h2>
+
 
     </div>
     </>
