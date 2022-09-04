@@ -72,10 +72,9 @@ const handleSubmit = () => {
              value={image} 
              onChange={(e) => setimage(e.target.value)} />
          </label>
-         <label>
+         <label style={{marginTop : 10}}>
              Gender :
-             <div>
-             <input 
+             <input style={{marginLeft : 10}}
              type="radio"
              value="male" 
              id="male"
@@ -88,32 +87,34 @@ const handleSubmit = () => {
             checked={gender === 'female'}
              onChange={(e) => setgender(e.target.value)} />
              <label> Female </label>
-             </div>
          </label>
-         <label>
+         <label style={{marginTop : 20}}>
              Skills :
-            <div>
-             <input type='checkbox'
+
+             <input style={{marginLeft : 10}}
+             type='checkbox'
              value='JavaScript' 
              checked={checkedJ}
              onClick={() => setcheckedJ(!checkedJ)}
              onChange={(e) =>  setskills([...skills,e.target.value])  } />
              <label>JavaScript</label>
 
-            <input type='checkbox'
+            <input style={{marginLeft : 10}}
+            type='checkbox'
              value='HTML'
              checked={checkedH}
              onClick={() => setcheckedH(!checkedH)}
              onChange={(e) => setskills([...skills,e.target.value])} />
              <label> HTML </label>
 
-            <input type='checkbox'
+            <input style={{marginLeft : 10}}
+            type='checkbox'
              value='CSS'
              checked={checkedC}
              onClick={() => setcheckedC(!checkedC)}
              onChange={(e) => setskills([...skills,e.target.value])} />
              <label> CSS </label>
-             </div>
+
          </label>
 
       </ul>
