@@ -9,7 +9,9 @@ const Input = ( ) => {
     const [image, setimage] = useState('');
     const [gender, setgender] = useState('');
     const [skills, setskills] = useState([]);
-    const [checked, setchecked] = useState('');
+    const [checkedJ, setcheckedJ] = useState(false);
+    const [checkedH, setcheckedH] = useState(false)
+    const [checkedC, setcheckedC] = useState(false)
 
     const [enrolled, setenrolled] = useState([]);
 
@@ -29,6 +31,7 @@ const handleSubmit = () => {
     setfirst('');setlast('');setemail('');
     setwebsite('');setimage('');
     setskills([]); setgender(''); 
+    setcheckedJ(false); setcheckedH(false) ; setcheckedC(false);
 
     console.log(enrolled);
 }
@@ -92,16 +95,22 @@ const handleSubmit = () => {
             <div>
              <input type='checkbox'
              value='JavaScript' 
-             onChange={(e) => setskills([...skills,e.target.value]) } />
+             checked={checkedJ}
+             onClick={() => setcheckedJ(!checkedJ)}
+             onChange={(e) =>  setskills([...skills,e.target.value])  } />
              <label>JavaScript</label>
 
             <input type='checkbox'
              value='HTML'
+             checked={checkedH}
+             onClick={() => setcheckedH(!checkedH)}
              onChange={(e) => setskills([...skills,e.target.value])} />
              <label> HTML </label>
 
             <input type='checkbox'
              value='CSS'
+             checked={checkedC}
+             onClick={() => setcheckedC(!checkedC)}
              onChange={(e) => setskills([...skills,e.target.value])} />
              <label> CSS </label>
              </div>
