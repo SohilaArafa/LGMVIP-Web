@@ -125,9 +125,33 @@ const handleSubmit = () => {
        <h2 style={{marginTop : -57 , marginLeft : 150 } }>
         Enrolled Students
         </h2>
+             {
+            enrolled.map( s  => {
+                return (
+                <ul className='Card' key={s.id} >
+                 <div className='container2'>
+                    <h2 >{s.fn} {s.ln} </h2>
+                    <hr/>
+                 </div>
+                 <div className='test'>
+                    <li> {s.g} </li>
+                    <li > {s.e} </li>
+                    <li><a href={s.w}> {s.w} </a></li>
+                    { s.s && s.s.map( skill => {
+                        return (  <li> {skill} </li>)
+                    } ) }
+                 </div>
+                 <div className='test2'>
+                    <img className='Img' src={s.i} /> 
+                 </div>
+ 
+                </ul>
+                )
+            })
+        }
+        </div>
 
 
-    </div>
     </>
   )
 }

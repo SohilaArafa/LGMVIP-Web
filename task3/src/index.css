@@ -44,3 +44,41 @@ code {
 .box {
   float: left;
 }
+.Card {
+  flex-direction: column;
+  float: left;
+  width: 60%;
+  height: 30%;
+  padding: 2px 16px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 90px;
+  margin-top: 0;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 300px 30px;
+}
+.container2 {
+  height: 80%;
+  float: right;
+}
+.Img {
+  width: 100px;
+  height: 100px;
+}
+.test {
+  width: 60%;
+  float: left;
+  text-align: left;
+  height: 80%;
+}
+.test2 {
+  width: 100%;
+  float: right;
+  margin-top: -80px;
+  margin-left: 200px;
+  height: 80%;
+}
