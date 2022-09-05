@@ -122,7 +122,7 @@ const handleSubmit = () => {
       <button className='submit' onClick={handleSubmit}  >Submit</button>
     </div>
     <div className='right'>
-       <h2 style={{marginTop : -57 , marginLeft : 150 } }>
+       <h2 style={{marginTop : -57 , marginLeft : 95 } }>
         Enrolled Students
         </h2>
              {
