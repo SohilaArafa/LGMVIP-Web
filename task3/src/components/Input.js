@@ -17,6 +17,11 @@ const Input = ( ) => {
 
 
 const handleSubmit = () => {
+    if(!first || !last || !email || !website || !image || !gender) {
+        alert("Please make sure you entered all data");
+    }
+    else {
+ 
     let current = {
         fn : first ,
         ln : last ,
@@ -24,7 +29,7 @@ const handleSubmit = () => {
         w : website,
         i : image ,
         g : gender ,
-        s : skills ,
+        s : skills,
         id : uuidv4() 
     }
 
@@ -35,6 +40,7 @@ const handleSubmit = () => {
     setcheckedJ(false); setcheckedH(false) ; setcheckedC(false);
 
     console.log(enrolled);
+}
 }
 
   return (
